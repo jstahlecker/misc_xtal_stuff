@@ -44,5 +44,13 @@ I have only tested this on a linux system, if you encounter any issues let me kn
     ```bash
     $ ./get_xtal_conditions.py -uniprot UNIPROT_ID -filename OUTPUT.CSV
     ```
+
+- Structure Contacts
+  - Quickly check which residues are in contacts with symmetry mates or with other monomers in the ASU. A default cutoff of 4 A is chosen, but can be changed.
+  - For pure pymol(-python) scripts I call it directly with pymol, rather than dealing with installing pymol to an environment.
+  - Usage
+    ```bash
+    $ pymol contact_residues --pdb PDBID [--cutoff 4]
+    ```
 # Bugs, Errors and Missing Functionality
 If anything does not work, is wrong or is missing let me know. If I have time I will try to correct and implement.
