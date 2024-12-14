@@ -15,7 +15,9 @@ def average_b_factor(selection="sele"):
     total_b_factor = 0
     for atom in cmd.get_model(selection).atom:
         total_b_factor += atom.b
-    return print(total_b_factor/atom_count)
+    avg_b_factor = total_b_factor/atom_count
+    print(avg_b_factor)
+    return avg_b_factor
 ```
 
 I have only tested this on a linux system, if you encounter any issues let me know.
