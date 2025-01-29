@@ -4,7 +4,7 @@ import json
 import pandas as pd
 import argparse
 import requests
-from get_fasta import get_fasta
+#from get_fasta import get_fasta
 
 def get_list_of_pdbs(uniprot, result_type="polymer_instance"):
     """Get list of PDBs based on uniprot id"""
