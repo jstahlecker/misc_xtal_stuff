@@ -206,8 +206,8 @@ class Table1:
                                 ("Overall", f'{self.refinement["Average B factor"]["Overall"]:.2f}'),
                                 ("Protein", f'{self.refinement["Average B factor"]["Protein"]:.2f}'),
                                 ("Water", f'{self.refinement["Average B factor"]["Water"]:.2f}')]
-        if self.ligand_name and self.pdb_file:
-            refinement_out.append(("Ligand", f'{self.refinement["Average B factor"]["Ligand"]:.2f}'))
+            if self.ligand_name and self.pdb_file:
+                refinement_out.append(("Ligand", f'{self.refinement["Average B factor"]["Ligand"]:.2f}'))
         else:
             refinement_out = []
 
