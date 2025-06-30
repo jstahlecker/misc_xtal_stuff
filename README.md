@@ -54,5 +54,14 @@ I have only tested this on a linux system, if you encounter any issues let me kn
     ```bash
     $ pymol contact_residues.py --pdb PDBID [--cutoff 4]
     ```
+
+- Fetch and Align
+  - Fetches all PDB structures (Xtal only, resolution less than 3 Å) and aligns them.
+  - Uses an arbitrary RMSD cutoff of 3 Å to filter out possible other proteins in the same PDB ID or when maybe just a fragment is present.
+  - Change all parameters at the end of the file.
+  - Usage:
+    ```bash
+    $ pymol fetch_and_align.py
+    ``` 
 # Bugs, Errors and Missing Functionality
 If anything does not work, is wrong or is missing let me know. If I have time I will try to correct and implement.
